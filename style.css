@@ -1,0 +1,262 @@
+    html {
+      margin:0;
+      padding:0;
+      height:100%;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #C5C5C5;
+      /*background-image: url(images/16.jpg);*/
+      background-size: cover;
+      padding-bottom: 100px;
+      margin-bottom: 100px;
+    }
+
+   
+    header {
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      background-color: #9DDDD3 ;
+     /*background-image: url(images/17.jpg);*/
+      background-size: cover;
+    }
+
+   
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      width: 130px;
+      height: auto;
+      border-radius: 50px;
+    }
+
+
+    nav {
+      background-color: #f4f4f4;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    .menu a{
+      background-color: #f4f4f4;
+      padding: 5px;
+      border-radius: 8px;
+      border: black solid 2px;
+      transition: color 0.5s;
+      transition: border 0.5s;
+      transition: border-radius 0.5s;
+    }
+
+    .menu a:hover {
+      color: black;
+      border: black solid 2px;
+      border-radius: 0px;
+      background-color: #9DDDD3;
+    }
+
+
+    a {
+      color: black;
+
+    }
+
+    a:link {
+       text-decoration: none;
+    }
+
+    a:visited {
+      text-decoration: none;
+    }
+
+    /* Kontener dla sekcji z wiadomościami */
+    .news-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+
+    }
+
+    /* Poszczególne kafelki z wiadomościami */
+    .news-card {
+      width: 300px;
+      position: static;
+      margin: 10px;
+      padding: 20px;
+      border-radius: 5px;
+      border: black solid 2px;
+      cursor: pointer;
+      background-color: #f4f4f4;
+      transition: transform 0.3s;
+      transition: background-color 0.3s;
+      transition: box-shadow 0.4s;
+    }
+
+    .news-card:hover {
+      transform: translateY(-5px);
+      background-color: #D7FFFA;
+      box-shadow: 5px 5px 5px 5px white;
+    }
+
+    .news-card img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+
+    .news-card h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .news-card p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.4;
+    }
+
+      /* Kafelek Wiadomość dnia */
+    .featured-news {
+      width: 100%;
+      margin: 10px;
+      padding: 20px;
+      background-color: #f4f4f4;
+      text-align: center;
+      cursor: pointer;
+      border: black solid 2px;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+      transition: background-color 0.3s;
+      transition: box-shadow 0.4s;
+
+    }
+
+    .featured-news:hover {
+      transform: translateY(-5px);
+      background-color: #D7FFFA;
+      box-shadow: 5px 5px 5px 5px white;
+
+    }
+
+
+
+    .featured-news img {
+      width: 20%;
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+
+    .featured-news h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      transition: text-decoration 0.5s;
+    }
+
+
+    .featured-news p {
+      font-size: 16px;
+      color: #666;
+      line-height: 1.4;
+    }
+
+
+
+
+
+
+footer {
+  position: static;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.pagination {
+  position: static;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  padding: 15px;
+  text-align: center;
+}
+
+.page-link {
+  margin: 5px;
+  padding: 5px 10px;
+  background-color: #666;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 8px;
+  border: black solid 2px;
+  transition: color 0.5s;
+  transition: border 0.5s;
+  transition: border-radius 0.5s;
+}
+
+.page-link:hover {
+  background-color: #999;
+  border: black solid 2px;
+  border-radius: 0px;
+  background-color: #9DDDD3;
+  color: black;
+}
+
+.page-next {
+  margin: 5px;
+  padding: 5px 10px;
+  background-color: #8F8F8F;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 8px;
+  border: black solid 2px;
+  transition: color 0.5s;
+  transition: border 0.5s;
+  transition: border-radius 0.5s;
+}
+
+.page-next:hover {
+  background-color: #999;
+  border: black solid 2px;
+  border-radius: 0px;
+  background-color: #9DDDD3;
+  color: black;
+}
+
+
+.footer-content {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
